@@ -38,7 +38,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="scoreboard">
-        <Header title="My scoreboard" totalPlayers={this.state.players.length} />
+        <Header title="My scoreboard" totalPlayers={this.state.players.length} players={this.state.players} />
 
         {/*Players List*/}
         { this.state.players.map(player =>
