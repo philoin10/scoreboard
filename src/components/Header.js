@@ -1,5 +1,6 @@
 import React from 'react';
 import {Statistics} from "./Statistics";
+import {Stopwatch} from "./Stopwatch";
 
 export const Header =
 (props) => {
@@ -7,7 +8,7 @@ export const Header =
     <header>
       <Statistics players={props.players}/>
       <h1>{ props.title }</h1>
-      <span className="stats">Players: { props.totalPlayers }</span>
+      <Stopwatch/>
     </header>
   )
 };
